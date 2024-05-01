@@ -152,7 +152,7 @@ class LoadedTask(object):
 
     def new_demo(self):
         try:
-            self.scene.get_demo(False, randomly_place=False)
+            self.scene.get_demo(True, randomly_place=False)
         except (WaypointError, NoWaypointsError, DemoError, Exception) as e:
             traceback.print_exc()
         success, terminate = self.task.success()
@@ -298,7 +298,7 @@ if __name__ == '__main__':
     loaded_task.new_task()
 
     while True:
-        os.system('cls' if os.name == 'nt' else 'clear')
+        # os.system('cls' if os.name == 'nt' else 'clear')
         print('\n-----------------\n')
         print('The python file will be reloaded when simulation is restarted.')
         print('(q) to quit.')

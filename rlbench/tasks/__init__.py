@@ -87,6 +87,7 @@ from rlbench.tasks.stack_cups import StackCups
 from rlbench.tasks.stack_wine import StackWine
 from rlbench.tasks.straighten_rope import StraightenRope
 from rlbench.tasks.sweep_to_dustpan import SweepToDustpan
+from rlbench.tasks.sweep_energy_margin import SweepEnergyMargin
 from rlbench.tasks.take_cup_out_from_cabinet import TakeCupOutFromCabinet
 from rlbench.tasks.take_frame_off_hanger import TakeFrameOffHanger
 from rlbench.tasks.take_item_out_of_drawer import TakeItemOutOfDrawer
@@ -210,6 +211,7 @@ FS95_V1 = {
         StackWine,
         StraightenRope,
         SweepToDustpan,
+        SweepEnergyMargin,
         TakeCupOutFromCabinet,
         TakeFrameOffHanger,
         TakeLidOffSaucepan,
